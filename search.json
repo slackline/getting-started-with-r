@@ -1,17 +1,10 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Getting Started with R",
+    "objectID": "learning_resources.html",
+    "href": "learning_resources.html",
+    "title": "Learning Resources",
     "section": "",
-    "text": "This is a website written in Quarto, it interweaves Markdown with R code. Its very similar to RMarkdown for which I’ve included a number of links.\nTo get started with R you need to install two programms R and RStudio. In the long term it would be worth getting familiar with Git and GitHub and there is an excellent site that guides you through doing that Happy Git and GitHub for the useR, but for now just install R and RStudi.o"
-  },
-  {
-    "objectID": "index.html#rmarkdown",
-    "href": "index.html#rmarkdown",
-    "title": "Getting Started with R",
-    "section": "RMarkdown",
-    "text": "RMarkdown\n\nQuarto\nIntroduction to R Markdown - RStudio\nLearn R Markdown • rmarkdown - RStudio\nR Markdown: The Definitive Guide - Home | Bookdown"
+    "text": "One of the best books for learning R is R for Data Science (2e). Its brilliant and shows how to structure workflows, organise files, read data from different sources, join different datasets, handle missing data, make summaries in tables and graphs. There is the R4DS Online Learning Community which has a Slack community with multiple channels where you can ask for questions you have as you work through the book."
   },
   {
     "objectID": "about.html",
@@ -19,5 +12,89 @@
     "title": "About",
     "section": "",
     "text": "This site was written by slackline to help a friend get started with learning R."
+  },
+  {
+    "objectID": "first_steps.html",
+    "href": "first_steps.html",
+    "title": "First Steps",
+    "section": "",
+    "text": "Now that you have installed R and RStudio we can move onto starting a project, installing packages and writing some R code."
+  },
+  {
+    "objectID": "first_steps.html#rstudio",
+    "href": "first_steps.html#rstudio",
+    "title": "First Steps",
+    "section": "RStudio",
+    "text": "RStudio\nWhen you start RStudio the window has several different sections as shown below\n\n\n\nRStudio Startup\n\n\nThere are panes within the window and each pane has tabs for different tasks/jobs. Your layout may be slightly different but will have the same areas as the above image, which in the bottom right thereis a “Files” tab showing with other tabs for “Plots”, “Packages”, “Help”, “Viewer” and “Presentation”. On the top left is the “Console” with tabs for “Terminal and”Background jobs”. On the left are tabs for “Environment”, “History” and “Connections”."
+  },
+  {
+    "objectID": "first_steps.html#starting-an-r-project",
+    "href": "first_steps.html#starting-an-r-project",
+    "title": "First Steps",
+    "section": "Starting an R Project",
+    "text": "Starting an R Project\nProjects are a way of encapsulating a group of files and work in a single managed space.\nStart RStudio and select File &gt; New Project in the window that appears select New Directory &gt; New Project.\n\n\n\nCreate Project from New Directory\n\n\n\n\n\nCreate New Project\n\n\nIn Directory Name enter getting-started-with-r and under Create project as a subdirectory of choose somewhere for the work to be saved to. Tick the boxes Create a git repository and Use renv with this project then click the Create Project button.\n\n\n\nSelecting Directory for a New Project\n\n\nYou’ve just initialised an the directory to be an R Project that RStudio recognises."
+  },
+  {
+    "objectID": "first_steps.html#installing-packages",
+    "href": "first_steps.html#installing-packages",
+    "title": "First Steps",
+    "section": "Installing Packages",
+    "text": "Installing Packages\nThe core of R is fully functional, you can do a lot with it, but the beauty and power of most languages is that they are extensible and people can write additional packages that add functionality. R is no exception, there are over 20000 packages available on the Comprehensive R Archive Network (CRAN).\nThere is a suite/group of packages collectively called the Tidyverse that follow a consistent design philosophy and grammar that make writing and using R much easier. These are worth using but need installing and are explained well in the R for Data Science (2e) book detailed below.\nYou can easily install them from the Console with.\ninstall.packages(\"tidyverse\")\nOnce installed you need to load the packages into R and so in RStudio you would type in the Console\nlibrary(tidyverse)\nAll the packages and programmes are now available to use."
+  },
+  {
+    "objectID": "first_steps.html#writing-r-code",
+    "href": "first_steps.html#writing-r-code",
+    "title": "First Steps",
+    "section": "Writing R Code",
+    "text": "Writing R Code\nYou can write R commands directly into the Console of RStudio and execute them, this is easy and convenient and R will keep a history of the commands you type that you can go back and forth through using the up and down arrows. However, long term you want to have code that is reproducible so its better to write your commands in a file and execute them from there.\nOne of the panels in RStudio has a tab labelled Files and from here you can create new folders and files. Using the New Folder button create a director called r, double-click on it to enter that directory and then use the New Blank File and select R Script to create a file called my_first_script.R. This opens up the file and you can start typing in it."
+  },
+  {
+    "objectID": "first_steps.html#reading-and-de-duplicating-data.",
+    "href": "first_steps.html#reading-and-de-duplicating-data.",
+    "title": "First Steps",
+    "section": "Reading and De-duplicating data.",
+    "text": "Reading and De-duplicating data.\nThe file example.csv includes some dummy data I made up to demonstrate how to de-deuplicate data. Right-click and save this file to getting-started-with-r/data where you are going to try things out (you will need to create the data directory within wherever you created getting-started-with-r in the previous step).\nReading the CSV into memory is done with the read_csv() command, and you assign the data to a named object, in this case df (short for data frame but it could be dog or cat it doesn’t matter) using the &lt;- assignment operator.\ndf &lt;- read_csv()"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Getting Started with R",
+    "section": "",
+    "text": "This is a website written in Quarto, it interweaves Markdown with R code. Its very similar to RMarkdown for which I’ve included a number of links.\nTo get started with R you need to install two programms R and RStudio. In the long term it would be worth getting familiar with Git and GitHub and there is an excellent site that guides you through doing that Happy Git and GitHub for the useR, but for now just install R and RStudio.\nOnce you’ve installed RStudio start the programme."
+  },
+  {
+    "objectID": "links.html",
+    "href": "links.html",
+    "title": "Links",
+    "section": "",
+    "text": "There are a lot of resources for learning R, RStudio, Quarto and Git/GitHub, here are some I find really useful"
+  },
+  {
+    "objectID": "links.html#quartormarkdown",
+    "href": "links.html#quartormarkdown",
+    "title": "Links",
+    "section": "Quarto/RMarkdown",
+    "text": "Quarto/RMarkdown\n\nQuarto amazingly good documentation.\nIntroduction to R Markdown - RStudio\nLearn R Markdown • rmarkdown - RStudio"
+  },
+  {
+    "objectID": "links.html#gitgithub",
+    "href": "links.html#gitgithub",
+    "title": "Links",
+    "section": "Git/GitHub",
+    "text": "Git/GitHub\n\nHappy Git and GitHub for the useR"
+  },
+  {
+    "objectID": "links.html#books",
+    "href": "links.html#books",
+    "title": "Links",
+    "section": "Books",
+    "text": "Books\n\nR for Data Science (2e)\nR Markdown: The Definitive Guide"
+  },
+  {
+    "objectID": "links.html#community",
+    "href": "links.html#community",
+    "title": "Links",
+    "section": "Community",
+    "text": "Community\n\nR4DS Online Learning Community"
   }
 ]

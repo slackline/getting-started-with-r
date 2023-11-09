@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Getting Started With R - About</title>
+<title>Getting Started With R - First Steps</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,40 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -86,7 +120,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./first_steps.html" rel="" target="">
+    <a class="nav-link active" href="./first_steps.html" rel="" target="" aria-current="page">
  <span class="menu-text">First Steps</span></a>
   </li>  
   <li class="nav-item">
@@ -98,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Links</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="./about.html" rel="" target="" aria-current="page">
+    <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
   </li>  
 </ul>
@@ -113,14 +147,24 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rstudio" id="toc-rstudio" class="nav-link active" data-scroll-target="#rstudio">RStudio</a></li>
+  <li><a href="#starting-an-r-project" id="toc-starting-an-r-project" class="nav-link" data-scroll-target="#starting-an-r-project">Starting an R Project</a></li>
+  <li><a href="#installing-packages" id="toc-installing-packages" class="nav-link" data-scroll-target="#installing-packages">Installing Packages</a></li>
+  <li><a href="#writing-r-code" id="toc-writing-r-code" class="nav-link" data-scroll-target="#writing-r-code">Writing R Code</a></li>
+  <li><a href="#reading-and-de-duplicating-data." id="toc-reading-and-de-duplicating-data." class="nav-link" data-scroll-target="#reading-and-de-duplicating-data.">Reading and De-duplicating data.</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">About</h1>
+<h1 class="title">First Steps</h1>
 </div>
 
 
@@ -135,9 +179,66 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>This site was written by <a href="https://github.com/slackline">slackline</a> to help a friend get started with learning R.</p>
+<p>Now that you have installed R and RStudio we can move onto starting a project, installing packages and writing some R code.</p>
+<section id="rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="rstudio">RStudio</h2>
+<p>When you start RStudio the window has several different sections as shown below</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/rstudio.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">RStudio Startup</figcaption>
+</figure>
+</div>
+<p>There are panes within the window and each pane has tabs for different tasks/jobs. Your layout may be slightly different but will have the same areas as the above image, which in the bottom right thereis a “Files” tab showing with other tabs for “Plots”, “Packages”, “Help”, “Viewer” and “Presentation”. On the top left is the “Console” with tabs for “Terminal and”Background jobs”. On the left are tabs for “Environment”, “History” and “Connections”.</p>
+</section>
+<section id="starting-an-r-project" class="level2">
+<h2 class="anchored" data-anchor-id="starting-an-r-project">Starting an R Project</h2>
+<p>Projects are a way of encapsulating a group of files and work in a single managed space.</p>
+<p>Start RStudio and select <em>File &gt; New Project</em> in the window that appears select <em>New Directory &gt; New Project</em>.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/rstudio_create_project.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Create Project from New Directory</figcaption>
+</figure>
+</div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/rstudio_new_project.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Create New Project</figcaption>
+</figure>
+</div>
+<p>In <em>Directory Name</em> enter <code>getting-started-with-r</code> and under <em>Create project as a subdirectory of</em> choose somewhere for the work to be saved to. Tick the boxes <em>Create a git repository</em> and <em>Use renv with this project</em> then click the <em>Create Project</em> button.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="img/rstudio_select_directory.png" class="img-fluid figure-img"></p>
+<figcaption class="figure-caption">Selecting Directory for a New Project</figcaption>
+</figure>
+</div>
+<p>You’ve just initialised an the directory to be an R Project that RStudio recognises.</p>
+</section>
+<section id="installing-packages" class="level2">
+<h2 class="anchored" data-anchor-id="installing-packages">Installing Packages</h2>
+<p>The core of R is fully functional, you can do a lot with it, but the beauty and power of most languages is that they are extensible and people can write additional packages that add functionality. R is no exception, there are over 20000 packages available on the <a href="https://cran.r-project.org/">Comprehensive R Archive Network (CRAN)</a>.</p>
+<p>There is a suite/group of packages collectively called the <a href="https://www.tidyverse.org/">Tidyverse</a> that follow a consistent design philosophy and grammar that make writing and using R much easier. These are worth using but need installing and are explained well in the <em>R for Data Science (2e)</em> book detailed below.</p>
+<p>You can easily install them from the <em>Console</em> with.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Once installed you need to load the packages into R and so in RStudio you would type in the Console</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>All the packages and programmes are now available to use.</p>
+</section>
+<section id="writing-r-code" class="level2">
+<h2 class="anchored" data-anchor-id="writing-r-code">Writing R Code</h2>
+<p>You can write R commands directly into the <em>Console</em> of RStudio and execute them, this is easy and convenient and R will keep a history of the commands you type that you can go back and forth through using the up and down arrows. However, long term you want to have code that is reproducible so its better to write your commands in a file and execute them from there.</p>
+<p>One of the panels in RStudio has a tab labelled <em>Files</em> and from here you can create new folders and files. Using the <em>New Folder</em> button create a director called <code>r</code>, double-click on it to enter that directory and then use the <em>New Blank File</em> and select <em>R Script</em> to create a file called <em>my_first_script.R</em>. This opens up the file and you can start typing in it.</p>
+</section>
+<section id="reading-and-de-duplicating-data." class="level2">
+<h2 class="anchored" data-anchor-id="reading-and-de-duplicating-data.">Reading and De-duplicating data.</h2>
+<p>The file <a href="data/csv/example.csv"><code>example.csv</code></a> includes some dummy data I made up to demonstrate how to de-deuplicate data. Right-click and save this file to <code>getting-started-with-r/data</code> where you are going to try things out (you will need to create the <code>data</code> directory within wherever you created <code>getting-started-with-r</code> in the previous step).</p>
+<p>Reading the CSV into memory is done with the <code>read_csv()</code> command, and you assign the data to a named object, in this case <code>df</code> (short for <code>d</code>ata <code>f</code>rame but it could be <code>dog</code> or <code>cat</code> it doesn’t matter) using the <code>&lt;-</code> assignment operator.</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
