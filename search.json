@@ -1,0 +1,23 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Getting Started with R",
+    "section": "",
+    "text": "This is a website written in Quarto, it interweaves Markdown with R code. Its very similar to RMarkdown for which I’ve included a number of links.\nTo get started with R you need to install two programms R and RStudio. In the long term it would be worth getting familiar with Git and GitHub and there is an excellent site that guides you through doing that Happy Git and GitHub for the useR, but for now just install R and RStudi.o"
+  },
+  {
+    "objectID": "index.html#rmarkdown",
+    "href": "index.html#rmarkdown",
+    "title": "Getting Started with R",
+    "section": "RMarkdown",
+    "text": "RMarkdown\n\nQuarto\nIntroduction to R Markdown - RStudio\nLearn R Markdown • rmarkdown - RStudio\nR Markdown: The Definitive Guide - Home | Bookdown"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "This site was written by slackline to help a friend get started with learning R."
+  }
+]
