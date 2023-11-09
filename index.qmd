@@ -1,0 +1,13 @@
+---
+title: "Getting Started with R"
+---
+
+This is a website written in [Quarto](https://quarto.org), it interweaves [Markdown](https://www.markdownguide.org/) with
+[R](https://www.r-project.org) code. Its very similar to RMarkdown for which I've included a number of links.
+
+To get started with R you need to install two programms [R](https://www.r-project.org) and
+[RStudio](https://posit.co/downloads/). In the long term it would be worth getting familiar with Git and GitHub and
+there is an excellent site that guides you through doing that [Happy Git and GitHub for the
+useR](https://happygitwithr.com/), but for now just install R and RStudio.
+
+Once you've installed RStudio start the programme.

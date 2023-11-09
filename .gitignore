@@ -47,3 +47,12 @@ po/*~
 
 # RStudio Connect folder
 rsconnect/
+
+# Quarto
+/.quarto/
+/_site/
+/_book/
+
+# Emacs
+*~
+\#*

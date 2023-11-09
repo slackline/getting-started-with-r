@@ -1,0 +1,25 @@
+---
+title: "Links"
+---
+
+There are a lot of resources for learning R, RStudio, Quarto and Git/GitHub, here are some I find really useful
+
+## Quarto/RMarkdown
+
++ [Quarto](https://quarto.org/) amazingly good documentation.
++ [Introduction to R Markdown - RStudio](https://rmarkdown.rstudio.com/articles_intro.html)
++ [Learn R Markdown • rmarkdown - RStudio](https://rmarkdown.rstudio.com/docs/articles/rmarkdown.html)
+
+## Git/GitHub
+
++ [Happy Git and GitHub for the useR](https://happygitwithr.com/)
+
+## Books
+
++ [R for Data Science (2e)](https://r4ds.hadley.nz/)
++ [R Markdown: The Definitive Guide](https://bookdown.org/yihui/rmarkdown/)
+
+
+## Community
+
++ [R4DS Online Learning Community](https://rfordatasci.com/)

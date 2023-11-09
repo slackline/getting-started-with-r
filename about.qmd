@@ -1,0 +1,5 @@
+---
+title: "About"
+---
+
+This site was written by [slackline](https://github.com/slackline) to help a friend get started with learning R.

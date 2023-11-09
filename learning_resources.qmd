@@ -1,0 +1,8 @@
+---
+title: "Learning Resources"
+---
+
+One of the best books for learning R is [R for Data Science (2e)](https://r4ds.hadley.nz/). Its brilliant and shows how
+to structure workflows, organise files, read data from different sources, join different datasets, handle missing data,
+make summaries in tables and graphs. There is the [R4DS Online Learning Community](https://rfordatasci.com/) which has a
+Slack community with multiple channels where you can ask for questions you have as you work through the book.

@@ -1,0 +1,91 @@
+---
+title: "First Steps"
+---
+
+Now that you have installed R and RStudio we can move onto starting a project, installing packages and writing some R
+code.
+
+## RStudio
+
+When you start RStudio the window has several different sections as shown below
+
+![RStudio Startup](img/rstudio.png)
+
+There are panes within the window and each pane has tabs for different tasks/jobs. Your layout may be slightly different
+but will have the same areas as the above image, which in the bottom right thereis a "Files"
+tab showing with other tabs for "Plots", "Packages", "Help", "Viewer" and "Presentation". On the top left is the
+"Console" with tabs for "Terminal and "Background jobs". On the left are tabs for "Environment", "History" and
+"Connections".
+
+
+## Starting an R Project
+
+Projects are a way of encapsulating a group of files and work in a single managed space.
+
+Start RStudio and select _File > New Project_ in the window that appears select _New Directory > New Project_.
+
+![Create Project from New Directory](img/rstudio_create_project.png)
+
+![Create New Project](img/rstudio_new_project.png)
+
+In _Directory Name_ enter  `getting-started-with-r` and under _Create project as a subdirectory of_ choose somewhere for the
+work to be saved to. Tick the boxes _Create a git repository_ and _Use renv with this project_ then click the _Create
+Project_ button.
+
+![Selecting Directory for a New Project](img/rstudio_select_directory.png)
+
+You've just initialised an the directory to be an R Project that RStudio recognises.
+
+
+## Installing Packages
+
+The core of R is fully functional, you can do a lot with it, but the beauty and power of most languages is that they are
+extensible and people can write additional packages that add functionality. R is no exception, there are over 20000
+packages available on the [Comprehensive R Archive Network (CRAN)](https://cran.r-project.org/).
+
+There is a suite/group of packages collectively called the [Tidyverse](https://www.tidyverse.org/) that follow a
+consistent design philosophy and grammar that make writing and using R much easier. These are worth using but need
+installing and are explained well in the _R for Data Science (2e)_ book detailed below.
+
+You can easily install them from the _Console_ with.
+
+``` {.r}
+install.packages("tidyverse")
+```
+
+Once installed you need to load the packages into R and so in RStudio you would type in the Console
+
+``` {.r}
+library(tidyverse)
+```
+
+All the packages and programmes are now available to use.
+
+## Writing R Code
+
+You can write R commands directly into the _Console_ of RStudio and execute them, this is easy and convenient and R will
+keep a history of the commands you type that you can go back and forth through using the up and down arrows. However,
+long term you want to have code that is reproducible so its better to write your commands in a file and execute them
+from there.
+
+One of the panels in RStudio has a tab labelled _Files_ and from here you can create new folders and files. Using the
+_New Folder_ button create a director called `r`, double-click on it to enter that directory and then use the _New Blank
+File_ and select _R Script_ to create a file called _my_first_script.R_.  This opens up the file and you can start
+typing in it.
+
+## Reading and De-duplicating data.
+
+
+The file [`example.csv`](data/csv/example.csv)  includes some dummy data I made up to demonstrate how
+to de-deuplicate data. Right-click and save this file to `getting-started-with-r/data` where you are going to try things
+out (you will need to create the `data` directory within wherever you created `getting-started-with-r` in the previous
+step).
+
+
+
+Reading the CSV into memory is done with the `read_csv()` command, and you assign the data to a named object, in this
+case `df` (short for `d`ata `f`rame but it could be `dog` or `cat` it doesn't matter) using the `<-` assignment operator.
+
+``` {.r}
+df <- read_csv()
+```

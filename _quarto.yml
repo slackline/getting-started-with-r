@@ -1,0 +1,19 @@
+project:
+  type: website
+
+website:
+  title: "Getting Started With R"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - first_steps.qmd
+      - learning_resources.qmd
+      - links.qmd
+      - about.qmd
+
+format:
+  html:
+    theme: cyborg
+    css: styles.css
+    toc: true
