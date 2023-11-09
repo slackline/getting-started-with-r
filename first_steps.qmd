@@ -64,9 +64,10 @@ All the packages and programmes are now available to use.
 ## Writing R Code
 
 You can write R commands directly into the _Console_ of RStudio and execute them, this is easy and convenient and R will
-keep a history of the commands you type that you can go back and forth through using the up and down arrows. However,
-long term you want to have code that is reproducible so its better to write your commands in a file and execute them
-from there.
+keep a history of the commands you type that you can go back and forth through using the up and down arrows (it writes
+them to the '.Rhistory' file in the project directory root). However, long term you want to have a more structured
+record of the code you write which is reproducible so its better to write your commands in a file and execute them from
+there.
 
 One of the panels in RStudio has a tab labelled _Files_ and from here you can create new folders and files. Using the
 _New Folder_ button create a director called `r`, double-click on it to enter that directory and then use the _New Blank
