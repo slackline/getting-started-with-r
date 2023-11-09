@@ -7,6 +7,7 @@ website:
     left:
       - href: index.qmd
         text: Home
+      - installation.qmd
       - first_steps.qmd
       - learning_resources.qmd
       - links.qmd

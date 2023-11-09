@@ -2,12 +2,13 @@
 title: "Getting Started with R"
 ---
 
-This is a website written in [Quarto](https://quarto.org), it interweaves [Markdown](https://www.markdownguide.org/) with
-[R](https://www.r-project.org) code. Its very similar to RMarkdown for which I've included a number of links.
+This site is about getting started with the [R](https://www.r-project.org) programming language. It aims to..
 
-To get started with R you need to install two programms [R](https://www.r-project.org) and
-[RStudio](https://posit.co/downloads/). In the long term it would be worth getting familiar with Git and GitHub and
-there is an excellent site that guides you through doing that [Happy Git and GitHub for the
-useR](https://happygitwithr.com/), but for now just install R and RStudio.
++ Help you install and setup the software required to start using R.
++ Introduces the [RStudio](https://posit.co/downloads/) Integrated Development Environment (IDE) for writing R code.
++ Explains some basic concepts about R packages and environments.
++ Introduces the Tidyverse.
++ Shows some basic examples of loading some data, cleaning it and summarising it via plots and tables.
 
-Once you've installed RStudio start the programme.
+This is site written in [Quarto](https://quarto.org) by [slackline](https://github.com/slackline). If you find any
+problems with the content please [create an issue](https://github.com/slackline/getting-started-with-r/issues).

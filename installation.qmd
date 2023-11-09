@@ -1,0 +1,22 @@
+---
+title: "Installation"
+---
+
+[R](https://www.r-project.org) and [RStudio](https://posit.co/downloads/) are two separate programmes that need
+installing.
+
+## R
+
+[Download](https://cloud.r-project.org/) and install R for your operating system.
+
+## RStudio
+
+[RStudio](https://posit.co/downloads/) is an Integrated Development Environment (IDE) produced by the company Posit that
+makes using R a bit smoother. It should be straight-forward to download and install following the instructions on the
+linked website.
+
+## Git
+
+In the long term it would be worth getting familiar with Git and GitHub and there is an excellent site that guides you
+through doing that [Happy Git and GitHub for the useR](https://happygitwithr.com/), this site won't attempt to duplicate
+the content so please work through the site to get yourself setup with Git and GitHub.
