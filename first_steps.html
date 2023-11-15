@@ -166,7 +166,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#describing-data" id="toc-describing-data" class="nav-link" data-scroll-target="#describing-data">Describing Data</a></li>
   <li><a href="#summarising-data" id="toc-summarising-data" class="nav-link" data-scroll-target="#summarising-data">Summarising Data</a></li>
   <li><a href="#grouping-data" id="toc-grouping-data" class="nav-link" data-scroll-target="#grouping-data">Grouping Data</a></li>
-  <li><a href="#help-pages" id="toc-help-pages" class="nav-link" data-scroll-target="#help-pages">Help Pages</a></li>
   </ul>
 </nav>
     </div>
@@ -197,65 +196,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>There is a suite/group of packages collectively called the <a href="https://www.tidyverse.org/">Tidyverse</a> that follow a consistent design philosophy and grammar that make writing and using R much easier. These are worth using but need installing and are explained well in the <em>R for Data Science (2e)</em> book detailed below.</p>
 <p>You can easily install them from the <em>Console</em> with.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The following package(s) will be installed:
-- tidyverse [2.0.0]
-These packages will be installed into "~/work/getting-started-with-r/getting-started-with-r/renv/library/R-4.2/x86_64-pc-linux-gnu".
-
-# Installing packages --------------------------------------------------------
-- Installing tidyverse ...                      OK [linked from cache]
-Successfully installed 1 package in 5.8 milliseconds.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"Hmisc"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code># Downloading packages -------------------------------------------------------
-- Downloading Hmisc from RStudio ...            OK [855.3 Kb in 0.2s]
-- Downloading gridExtra from RStudio ...        OK [1 Mb]
-- Downloading htmlTable from RStudio ...        OK [425.9 Kb]
-- Downloading checkmate from RStudio ...        OK [224.9 Kb]
-- Downloading htmlwidgets from RStudio ...      OK [847.1 Kb]
-- Downloading viridis from RStudio ...          OK [2.9 Mb]
-- Downloading Formula from RStudio ...          OK [125.3 Kb]
-Successfully downloaded 7 packages in 1.6 seconds.
-
-The following package(s) will be installed:
-- checkmate   [2.3.0]
-- Formula     [1.2-5]
-- gridExtra   [2.3]
-- Hmisc       [5.1-1]
-- htmlTable   [2.4.2]
-- htmlwidgets [1.6.2]
-- viridis     [0.6.4]
-These packages will be installed into "~/work/getting-started-with-r/getting-started-with-r/renv/library/R-4.2/x86_64-pc-linux-gnu".
-
-# Installing packages --------------------------------------------------------
-- Installing gridExtra ...                      OK [built from source and cached in 1.8s]
-- Installing checkmate ...                      OK [built from source and cached in 4.3s]
-- Installing htmlwidgets ...                    OK [built from source and cached in 1.9s]
-- Installing htmlTable ...                      OK [built from source and cached in 3.3s]
-- Installing viridis ...                        OK [built from source and cached in 2.7s]
-- Installing Formula ...                        OK [built from source and cached in 1.2s]
-- Installing Hmisc ...                          OK [built from source and cached in 24s]
-Successfully installed 7 packages in 39 seconds.</code></pre>
-</div>
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="do">## All in one</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"Hmisc"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>The following package(s) will be installed:
-- Hmisc     [5.1-1]
-- tidyverse [2.0.0]
-These packages will be installed into "~/work/getting-started-with-r/getting-started-with-r/renv/library/R-4.2/x86_64-pc-linux-gnu".
-
-# Installing packages --------------------------------------------------------
-- Installing tidyverse ...                      OK [linked from cache]
-- Installing Hmisc ...                          OK [linked from cache]
-Successfully installed 2 packages in 8.1 milliseconds.</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"Hmisc"</span>)</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="do">## All in one</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="do">## install.packages(c("tidyverse", "Hmisc"))</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>Once installed you need to load the packages into R and so in RStudio you would type in the Console</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
 ✔ dplyr     1.1.3     ✔ readr     2.1.4
@@ -268,7 +216,7 @@ Successfully installed 2 packages in 8.1 milliseconds.</code></pre>
 ✖ dplyr::lag()    masks stats::lag()
 ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Hmisc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(Hmisc)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>
 Attaching package: 'Hmisc'
@@ -294,7 +242,7 @@ The following objects are masked from 'package:base':
 <p>The file <a href="data/csv/example.csv"><code>example.csv</code></a> includes some dummy data I made up to demonstrate how to de-deuplicate data. Right-click and save this file to <code>getting-started-with-r/data/csv</code> where you are going to try things out (you will need to create the nested <code>data/csv</code> directory within wherever you created <code>getting-started-with-r</code> in the previous step).</p>
 <p>Reading the CSV into memory is done with the <code>read_csv()</code> command, and you assign the data to a named object, in this case <code>df</code> (short for <code>d</code>ata <code>f</code>rame but it could be <code>dog</code> or <code>cat</code> it doesn’t matter) using the <code>&lt;-</code> assignment operator.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/csv/example.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>df <span class="ot">&lt;-</span> <span class="fu">read_csv</span>(<span class="st">"data/csv/example.csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Rows: 7 Columns: 4
 ── Column specification ────────────────────────────────────────────────────────
@@ -310,7 +258,7 @@ dbl (1): age
 <p><strong>NB</strong> If you <em>didn’t</em> first run <code>library(tidyverse)</code> you will see an error message saying <code>could not find function read_csv</code> because the <code>read_csv()</code> function is part of the <code>tidyverse</code> library.</p>
 <p>This loads the data into an “object” called <code>df</code> and we can look at the data by simply typing its name…</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 7 × 4
   name        age gender species   
@@ -327,7 +275,7 @@ dbl (1): age
 <p>This is a small dataset so we’re able to look at it and make sense of it but often datasets are a lot larger and “looking” at data isn’t that useful. What is more useful is to <em>describe</em>, <em>summarise</em> and <em>visualise</em> the data.</p>
 <p>If we want to look at just one column there are a couple of ways of doing so, we can use the <code>$</code> operator on the data frame to select the column…</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>df<span class="sc">$</span>name</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "merlin"    "carrot"    "coco"      "daisy"     "buttercup" "merlin"   
 [7] "fluff"    </code></pre>
@@ -342,7 +290,7 @@ dbl (1): age
 <h3 class="anchored" data-anchor-id="dplyrselect"><code>dplyr::select()</code></h3>
 <p>We can use <a href="https://dplyr.tidyverse.org/reference/select.html">dplyr::select()</a> to select columns that we want to keep/see. Here we use the built-in pipe operator <code>|&gt;</code> which passes what is on the left (<code>df</code>) into what is on the right (the function <code>dplyr::select()</code>). There are other pipe operators available from the <a href="https://magrittr.tidyverse.org/">magrittr package</a>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 7 × 1
   name     
@@ -361,8 +309,8 @@ dbl (1): age
 <h3 class="anchored" data-anchor-id="dplyrfilter"><code>dplyr::filter()</code></h3>
 <p>The <code>dplyr::filter()</code> command allows you to select rows that you wish to subset data by. For example if we wanted to select all <code>cats</code> from our example data we would filter based on the <code>species</code> column.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"cat"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"cat"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 4
   name     age gender species
@@ -374,9 +322,9 @@ dbl (1): age
 </div>
 <p>We can combine <code>dplyr::filter()</code> and <code>dplyr::select()</code> to filter on rows and columns. You may want to filter your data first as some of the columns you are filtering on you may not want to retain. In this example we filter on <code>species</code> but then only select the <code>name</code> and <code>age</code> columns.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"cat"</span>) <span class="sc">|&gt;</span></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(name, age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb16"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">filter</span>(species <span class="sc">==</span> <span class="st">"cat"</span>) <span class="sc">|&gt;</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    dplyr<span class="sc">::</span><span class="fu">select</span>(name, age)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 3 × 2
   name     age
@@ -394,7 +342,7 @@ dbl (1): age
 <p>Describing data in programming often involves simply saying what the data is. Data tables in R can be thought of as analogous to worksheets within a spreadsheet and so there are columns which define variables and rows which define observations/entries. Each column has a unique data “type” and R does its best to guess what this should be and apply it.</p>
 <p>Usefully, the <code>read_csv()</code> function gives us a description of the data we have loaded for free when reading the files, but you may have derived datasets or just want to check the types of data in your data frame after making changes. We can do this using the <code>describe()</code> functional</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> Hmisc<span class="sc">::</span><span class="fu">describe</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> Hmisc<span class="sc">::</span><span class="fu">describe</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>df 
 
@@ -439,7 +387,7 @@ Proportion      0.429      0.286      0.286
 <p>This gives us a nice simple summary of the data with the number of missing and distinct values for all variables, frequency and proportions for categorical string variables (<code>name</code>, <code>gender</code>, <code>species</code>) and for the numerical variable <code>age</code> some simple summary statistics.</p>
 <p>We can also make simple tables of data by selecting columns and then pipping them into the <code>table()</code></p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(name) <span class="sc">|&gt;</span> <span class="fu">table</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(name) <span class="sc">|&gt;</span> <span class="fu">table</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>name
 buttercup    carrot      coco     daisy     fluff    merlin 
@@ -448,7 +396,7 @@ buttercup    carrot      coco     daisy     fluff    merlin
 </div>
 <p>By default the <code>table()</code> command doesn’t show any values that are missing which R represents internally as <code>NA</code>, you have to explicitly display these using the <code>useNA</code> option.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(name) <span class="sc">|&gt;</span> <span class="fu">table</span>(<span class="at">useNA =</span> <span class="st">"ifany"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(name) <span class="sc">|&gt;</span> <span class="fu">table</span>(<span class="at">useNA =</span> <span class="st">"ifany"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>name
 buttercup    carrot      coco     daisy     fluff    merlin 
@@ -457,7 +405,7 @@ buttercup    carrot      coco     daisy     fluff    merlin
 </div>
 <p>It makes no difference here because there aren’t any missing names, but if we apply it to age it does make a difference since <code>fluff</code> is missing his age.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(age) <span class="sc">|&gt;</span> <span class="fu">table</span>(<span class="at">useNA =</span> <span class="st">"ifany"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">select</span>(age) <span class="sc">|&gt;</span> <span class="fu">table</span>(<span class="at">useNA =</span> <span class="st">"ifany"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>age
    3    4    6   14 &lt;NA&gt; 
@@ -469,9 +417,9 @@ buttercup    carrot      coco     daisy     fluff    merlin
 <h2 class="anchored" data-anchor-id="summarising-data">Summarising Data</h2>
 <p>We can easily summarise data using the <a href="https://dplyr.tidyverse.org/reference/summarise.html"><code>dplyr::summarise()</code></a> (or <code>summarize()</code>) function from <code>dplyr</code>.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(age),</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sd =</span> <span class="fu">sd</span>(age),</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">n =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a>df <span class="sc">|&gt;</span> dplyr<span class="sc">::</span><span class="fu">summarise</span>(<span class="at">mean =</span> <span class="fu">mean</span>(age),</span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">sd =</span> <span class="fu">sd</span>(age),</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">n =</span> <span class="fu">n</span>())</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 1 × 3
    mean    sd     n
@@ -483,41 +431,6 @@ buttercup    carrot      coco     daisy     fluff    merlin
 <section id="grouping-data" class="level2">
 <h2 class="anchored" data-anchor-id="grouping-data">Grouping Data</h2>
 <p>Often you want to perform summaries on groups of data. <code>dplyr</code> makes this straight-forward as it has the verb <code>groupby()</code> which groups the data and subsequent commands are performed on each group. Here we group by <code>species</code> and</p>
-</section>
-<section id="help-pages" class="level2">
-<h2 class="anchored" data-anchor-id="help-pages">Help Pages</h2>
-<p>How do we know what options a function has? Well each package and function has excellent built-in help we can access at the command line. All you need to do is precede the function you want to look at the help for with a <code>?</code> and the help will be shown.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a>?table</span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>table                   package<span class="sc">:</span>base                   R Documentation</span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>Cross Tabulation and Table Creation</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a>Description<span class="sc">:</span></span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a>     ‘table’ uses cross<span class="sc">-</span>classifying factors to build a contingency</span>
-<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>     table of the counts at each combination of factor levels.</span>
-<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a>Usage<span class="sc">:</span></span>
-<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a>     <span class="fu">table</span>(...,</span>
-<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a>           <span class="at">exclude =</span> <span class="cf">if</span> (useNA <span class="sc">==</span> <span class="st">"no"</span>) <span class="fu">c</span>(<span class="cn">NA</span>, <span class="cn">NaN</span>),</span>
-<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a>           <span class="at">useNA =</span> <span class="fu">c</span>(<span class="st">"no"</span>, <span class="st">"ifany"</span>, <span class="st">"always"</span>),</span>
-<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a>           <span class="at">dnn =</span> <span class="fu">list.names</span>(...), <span class="at">deparse.level =</span> <span class="dv">1</span>)</span>
-<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-18"><a href="#cb33-18" aria-hidden="true" tabindex="-1"></a>     <span class="fu">as.table</span>(x, ...)</span>
-<span id="cb33-19"><a href="#cb33-19" aria-hidden="true" tabindex="-1"></a>     <span class="fu">is.table</span>(x)</span>
-<span id="cb33-20"><a href="#cb33-20" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-21"><a href="#cb33-21" aria-hidden="true" tabindex="-1"></a>     <span class="do">## S3 method for class 'table'</span></span>
-<span id="cb33-22"><a href="#cb33-22" aria-hidden="true" tabindex="-1"></a>     <span class="fu">as.data.frame</span>(x, <span class="at">row.names =</span> <span class="cn">NULL</span>, ...,</span>
-<span id="cb33-23"><a href="#cb33-23" aria-hidden="true" tabindex="-1"></a>                   <span class="at">responseName =</span> <span class="st">"Freq"</span>, <span class="at">stringsAsFactors =</span> <span class="cn">TRUE</span>,</span>
-<span id="cb33-24"><a href="#cb33-24" aria-hidden="true" tabindex="-1"></a>                   <span class="at">sep =</span> <span class="st">""</span>, <span class="at">base =</span> <span class="fu">list</span>(LETTERS))</span>
-<span id="cb33-25"><a href="#cb33-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-26"><a href="#cb33-26" aria-hidden="true" tabindex="-1"></a>Arguments<span class="sc">:</span></span>
-<span id="cb33-27"><a href="#cb33-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-28"><a href="#cb33-28" aria-hidden="true" tabindex="-1"></a>...</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<p>Try looking at the help for <code>dplyr::select()</code></p>
 
 
 </section>
