@@ -16,7 +16,7 @@ jobs:
 
       - name: Install libcurl
         run: |
-          sudo apt install libcurl
+          sudo apt install libcurl4
 
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
