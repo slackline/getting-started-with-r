@@ -2,6 +2,11 @@
 title: "Getting Started with R"
 ---
 
+```{r}
+#| eval: true
+#| echo: false
+library(Hmisc)
+```
 This site is about getting started with the [R](https://www.r-project.org) programming language. It aims to..
 
 + Help you install and setup the software required to start using R.

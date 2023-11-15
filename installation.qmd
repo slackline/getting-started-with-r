@@ -5,6 +5,12 @@ title: "Installation"
 [R](https://www.r-project.org) and [RStudio](https://posit.co/downloads/) are two separate programmes that need
 installing.
 
+## Git
+
+In the long term it would be worth getting familiar with Git and GitHub and there is an excellent site that guides you
+through doing that [Happy Git and GitHub for the useR](https://happygitwithr.com/), this site won't attempt to duplicate
+the content so please work through the site to get yourself setup with Git and GitHub.
+
 ## R
 
 [Download](https://cloud.r-project.org/) and install R for your operating system.
@@ -15,8 +21,32 @@ installing.
 makes using R a bit smoother. It should be straight-forward to download and install following the instructions on the
 linked website.
 
-## Git
 
-In the long term it would be worth getting familiar with Git and GitHub and there is an excellent site that guides you
-through doing that [Happy Git and GitHub for the useR](https://happygitwithr.com/), this site won't attempt to duplicate
-the content so please work through the site to get yourself setup with Git and GitHub.
+When you start RStudio the window has several different sections as shown below
+
+![RStudio Startup](img/rstudio.png)
+
+There are panes within the window and each pane has tabs for different tasks/jobs. Your layout may be slightly different
+but will have the same areas as the above image, which in the bottom right thereis a "Files"
+tab showing with other tabs for "Plots", "Packages", "Help", "Viewer" and "Presentation". On the top left is the
+"Console" with tabs for "Terminal and "Background jobs". On the left are tabs for "Environment", "History" and
+"Connections".
+
+
+### Starting an R Project
+
+Projects are a way of encapsulating a group of files and work in a single managed space.
+
+Start RStudio and select _File > New Project_ in the window that appears select _New Directory > New Project_.
+
+![Create Project from New Directory](img/rstudio_create_project.png)
+
+![Create New Project](img/rstudio_new_project.png)
+
+In _Directory Name_ enter  `getting-started-with-r` and under _Create project as a subdirectory of_ choose somewhere for the
+work to be saved to. Tick the boxes _Create a git repository_ and _Use renv with this project_ then click the _Create
+Project_ button.
+
+![Selecting Directory for a New Project](img/rstudio_select_directory.png)
+
+You've just initialised the directory to be an R Project that RStudio recognises.
