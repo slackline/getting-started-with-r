@@ -21,11 +21,11 @@ You can easily install them from the _Console_ with.
 ```{r}
 #| echo: true
 #| eval: true
-#| output: true
+#| output: false
 install.packages("tidyverse")
 install.packages("Hmisc")
 ## All in one
-install.packages(c("tidyverse", "Hmisc"))
+## install.packages(c("tidyverse", "Hmisc"))
 ```
 
 Once installed you need to load the packages into R and so in RStudio you would type in the Console
@@ -228,44 +228,3 @@ df |> dplyr::summarise(mean = mean(age),
 
 Often you want to perform summaries on groups of data. `dplyr` makes this straight-forward as it has the verb
 `groupby()` which groups the data and subsequent commands are performed on each group. Here we group by `species` and
-
-## Help Pages
-
-How do we know what options a function has? Well each package and function has excellent built-in help we can access at
-the command line. All you need to do is precede the function you want to look at the help for with a `?` and the help
-will be shown.
-
-```{r}
-#| echo: true
-#| eval: false
-?table
-table                   package:base                   R Documentation
-
-Cross Tabulation and Table Creation
-
-Description:
-
-     ‘table’ uses cross-classifying factors to build a contingency
-     table of the counts at each combination of factor levels.
-
-Usage:
-
-     table(...,
-           exclude = if (useNA == "no") c(NA, NaN),
-           useNA = c("no", "ifany", "always"),
-           dnn = list.names(...), deparse.level = 1)
-
-     as.table(x, ...)
-     is.table(x)
-
-     ## S3 method for class 'table'
-     as.data.frame(x, row.names = NULL, ...,
-                   responseName = "Freq", stringsAsFactors = TRUE,
-                   sep = "", base = list(LETTERS))
-
-Arguments:
-
-...
-```
-
-Try looking at the help for `dplyr::select()`

@@ -5,7 +5,8 @@ title: "Getting Started with R"
 ```{r}
 #| eval: true
 #| echo: false
-library(Hmisc)
+#| output: false
+## library(Hmisc)
 ```
 This site is about getting started with the [R](https://www.r-project.org) programming language. It aims to..
 
@@ -14,6 +15,7 @@ This site is about getting started with the [R](https://www.r-project.org) progr
 + Explains some basic concepts about R packages and environments.
 + Introduces the Tidyverse.
 + Shows some basic examples of loading some data, cleaning it and summarising it via plots and tables.
++ Introduces literate programming.
 
 This is site written in [Quarto](https://quarto.org) by [slackline](https://github.com/slackline). If you find any
 problems with the content please [create an issue](https://github.com/slackline/getting-started-with-r/issues).

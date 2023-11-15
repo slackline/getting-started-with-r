@@ -2,7 +2,69 @@
 title: "Learning Resources"
 ---
 
+
+## Help Pages
+
+How do we know what options a function has? Well each package and function has excellent built-in help we can access at
+the command line. All you need to do is precede the function you want to look at the help for with a `?` and the help
+will be shown.
+
+```{r}
+#| echo: true
+#| eval: false
+?table
+table                   package:base                   R Documentation
+
+Cross Tabulation and Table Creation
+
+Description:
+
+     ‘table’ uses cross-classifying factors to build a contingency
+     table of the counts at each combination of factor levels.
+
+Usage:
+
+     table(...,
+           exclude = if (useNA == "no") c(NA, NaN),
+           useNA = c("no", "ifany", "always"),
+           dnn = list.names(...), deparse.level = 1)
+
+     as.table(x, ...)
+     is.table(x)
+
+     ## S3 method for class 'table'
+     as.data.frame(x, row.names = NULL, ...,
+                   responseName = "Freq", stringsAsFactors = TRUE,
+                   sep = "", base = list(LETTERS))
+
+Arguments:
+
+...
+```
+
+Try looking at the help for `dplyr::select()`
+
+## Package Documentation
+
+Much of the [Tidyverse](https://www.tidyverse.org/) packages have excellent documentation on their websites.
+
++ [dplyr](https://dplyr.tidyverse.org/)
++ [forcats](https://forcats.tidyverse.org/)
++ [ggplot2](https://ggplot2.tidyverse.org/)
++ [purrr](https://purrr.tidyverse.org/)
++ [readr](https://readr.tidyverse.org/)
++ [stringr](https://stringr.tidyverse.org/)
+
+### Literate Programming
+
+One of the best features of R is the RMarkdown ecosystem, the latest iteration of which is the
+[Quarto](https://quarto.org) publishing framework.
+
+## Books
+
 One of the best books for learning R is [R for Data Science (2e)](https://r4ds.hadley.nz/). Its brilliant and shows how
 to structure workflows, organise files, read data from different sources, join different datasets, handle missing data,
 make summaries in tables and graphs. There is the [R4DS Online Learning Community](https://rfordatasci.com/) which has a
 Slack community with multiple channels where you can ask for questions you have as you work through the book.
+
+There are many other books that are freely available though.
