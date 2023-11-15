@@ -14,6 +14,10 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
+      - name: Install libcurl
+        run: |
+          sudo apt install libcurl
+
       - name: Set up Quarto
         uses: quarto-dev/quarto-actions/setup@v2
 
