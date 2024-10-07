@@ -1,1 +1,1 @@
-Sitemap: https://github.com/slackline/getting-started-with-r/sitemap.xml
+Sitemap: https://slackline.github.io/getting-started-with-r/sitemap.xml
